@@ -44,49 +44,56 @@
       }
 
       .image-slider-buttons button {
-        padding: 10px 20px;
         margin: 5px;
         font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+      }
+      .image-slider-buttons button i {
+        font-size: 20px;
       }
     </style>
   </head>
   <body>
-    <div class="image-slider-container">
-      <div class="image-slider-track" id="sliderTrack">
-        <div class="image-slide">
-          <img
-            src="https://storage.googleapis.com/msgsndr/GmHuPmA1xs8oBbgtUI6R/media/67f7674b0a6217d7dbd5c668.png"
-            alt="Image 1"
-          />
-        </div>
-        <div class="image-slide">
-          <img
-            src="https://storage.googleapis.com/msgsndr/GmHuPmA1xs8oBbgtUI6R/media/67f767a65829cc14b04a39f4.png"
-            alt="Image 2"
-          />
-        </div>
-        <div class="image-slide">
-          <img
-            src="https://storage.googleapis.com/msgsndr/GmHuPmA1xs8oBbgtUI6R/media/67f7674b0a6217d7dbd5c668.png"
-            alt="Image 3"
-          />
-        </div>
-        <div class="image-slide">
-          <img
-            src="https://storage.googleapis.com/msgsndr/GmHuPmA1xs8oBbgtUI6R/media/67f767a65829cc14b04a39f4.png"
-            alt="Image 4"
-          />
+    <div class="images-sliders-container">
+      <div class="image-slider-container">
+        <div class="image-slider-track" id="sliderTrack">
+          <div class="image-slide">
+            <img
+              src="https://storage.googleapis.com/msgsndr/GmHuPmA1xs8oBbgtUI6R/media/67f7674b0a6217d7dbd5c668.png"
+              alt="Image 1"
+            />
+          </div>
+          <div class="image-slide">
+            <img
+              src="https://storage.googleapis.com/msgsndr/GmHuPmA1xs8oBbgtUI6R/media/67f767a65829cc14b04a39f4.png"
+              alt="Image 2"
+            />
+          </div>
+          <div class="image-slide">
+            <img
+              src="https://storage.googleapis.com/msgsndr/GmHuPmA1xs8oBbgtUI6R/media/67f7674b0a6217d7dbd5c668.png"
+              alt="Image 3"
+            />
+          </div>
+          <div class="image-slide">
+            <img
+              src="https://storage.googleapis.com/msgsndr/GmHuPmA1xs8oBbgtUI6R/media/67f767a65829cc14b04a39f4.png"
+              alt="Image 4"
+            />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="image-slider-buttons">
-      <button onclick="prevSlideImage()">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
-      <button onclick="nextSlideImage()">
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
+      <div class="image-slider-buttons">
+        <button onclick="prevSlideImage()">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button onclick="nextSlideImage()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
     </div>
 
     <script>
